@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>
+      HTML page for testing
+      </title>
+    </head>
+  <body>
+    <form id="myyForm" name="myyForm" method="post">
+      <table>
+        <tr>
+          <td>
+            Enter your First Name
+            </td>
+            <td>
+              <input type="text" name="fName" id="fName" placeholder="Enter your First Name">
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <button name="next" id="next" onclick="nextClicked()">
+                Next
+                </button>
+              </td>
+              <td>
+                <button name="previous" id="previous" onclick="previousClicked()">
+                  Previous
+                  </button>
+                </td>
+            </tr>
+        </table>
+      </form>
+    </body>
+    <script>
+    // $('#next').click(function () {
+    //   console.log("in html next clicked");
+    //   $.post('/next1');
+    // });
+    // $('#previous').click(function () {
+    //   console.log("in html previous clicked");
+    //   $.post('/previous1');
+    // });
+    function nextClicked(){
+      console.log("in html next clicked");
+      document.getElementById('myyForm').action = 'next1';
+      document.getElementById('myyForm').submit();
+    }
+    function previousClicked(){
+      console.log("in html previous clicked");
+      document.getElementById('myyForm').action = 'previous1';
+      document.getElementById('myyForm').submit();
+
+    }
+      </script>
+  </html>

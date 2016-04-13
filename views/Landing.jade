@@ -1,0 +1,35 @@
+doctype html
+html(lang='en')
+  head
+    title Landing Page for Lab4
+  body
+    form(
+      method = 'POST'
+      action = 'previous1'
+      )
+      table
+        tr
+          td First Name
+          td
+            input(
+              type = "text"
+              id= "fName"
+              name= "fName"
+              placeholder = "Enter your First Name"
+            )
+        tr
+          td
+            input(
+              type = "submit"
+              id = "previous"
+              name = "previous"
+              value = "previous"
+            )
+          td
+            input(
+              type = "submit"
+              id = "next"
+              name = "next"
+              value = "next"
+              formaction = "next1"
+              )
